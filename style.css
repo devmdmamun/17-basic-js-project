@@ -29,7 +29,7 @@ h1 {
   color: #656cd3;
 }
 .bgStopWatch {
-  background-image: url("image/bg.png");
+  background-image: url("./StopWatch/image/bg.png");
   background-size: contain;
   background-repeat: no-repeat;
   max-width: 1052px;
