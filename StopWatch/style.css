@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@200&family=Orbitron:wght@500&family=Zen+Tokyo+Zoo&display=swap");
 :root {
   --defcol: rgba(255, 255, 255, 0.53);
 }
@@ -6,10 +6,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 .container {
   text-align: center;
@@ -26,6 +22,11 @@ p {
 h1 {
   font-size: 3rem;
   padding-top: 20px;
+}
+#jsClock-h1 {
+  font-size: 3.5rem;
+  font-family: "Zen Tokyo Zoo", cursive;
+  color: #656cd3;
 }
 .bgStopWatch {
   background-image: url("image/bg.png");
@@ -71,6 +72,16 @@ button:hover {
   border: 1px solid #656cd3b7;
   color: white;
   transition: 0.4s;
+}
+#jsclock {
+  color: #656cd3;
+  font-size: 60px;
+  position: absolute;
+  min-width: 430px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-family: "Orbitron", sans-serif;
 }
 footer {
   position: fixed;
