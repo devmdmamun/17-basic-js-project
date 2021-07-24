@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
+  font-size: 2rem;
+}
+.calculator {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 15px #525cee;
+  box-shadow: 0px 0px 15px #525cee;
+  transition: 0.5s;
+  padding: 7px;
+  width: fit-content;
+}
+.calculator:hover {
+  -webkit-box-shadow: 0 0 0 0.1rem #525cee;
+  box-shadow: 0 0 0 0.1rem #525cee;
+  transition: 0.5s;
+}
+.input {
+  color: #525cee;
+  border: 1px solid #525cee;
+  border-radius: 3px;
+  height: 70px;
+  padding: 10px 15px 0 0;
+  text-align: right;
+  margin: 20px;
+  font-size: 3rem;
+  overflow-x: auto;
+}
+.operators div,
+.numbers div {
+  padding: 10px;
+}
+.number-panel {
+  display: inline-block;
+}
+.operators div,
+.numbers div,
+#equal {
+  border-radius: 3px;
+  transition: 0.2s;
+  margin: 10px 7px;
+  cursor: pointer;
+  width: 80px;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  border: 1px solid #525cee;
+  background-color: #525cee;
+}
+.operators div:hover,
+.numbers div:hover,
+#equal:hover {
+  -webkit-box-shadow: 0px 0px 7px #525cee;
+  box-shadow: 0px 0px 7px #525cee;
+  transition: 0.2s;
+}
+#equal {
+  background-color: #2937ff;
+  border: 1px solid #2937ff;
+  padding: 130px 10px;
+  vertical-align: top;
+}
+@media (max-width: 415px) {
+  .operators div,
+  .numbers div,
+  #equal {
+    margin: 10px 1px;
+    width: 65px;
+  }
+  .input {
+    margin: 10px;
+  }
+}
