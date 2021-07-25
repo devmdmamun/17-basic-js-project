@@ -18,11 +18,11 @@ for (let i = 0; i < number.length; i++) {
       lastChar === "÷"
     ) {
       displayResult = false;
-      input.innerHTML = e.target.innerHTML;
+      input.innerHTML += e.target.innerHTML;
     } else {
       displayResult = false;
       input.innerHTML = "";
-      input.innerHTML = e.target.innerHTML;
+      input.innerHTML += e.target.innerHTML;
     }
   });
 }
@@ -39,7 +39,6 @@ for (let i = 0; i < operators.length; i++) {
       let newInputValue =
         inputValue.substring(0, inputValue.length - 1) + e.target.innerHTML;
       input.innerHTML = newInputValue;
-    } else if (inputValue.length == 0) {
     } else {
       input.innerHTML += e.target.innerHTML;
     }
@@ -54,7 +53,6 @@ equal.addEventListener("click", () => {
     num.splice(divide, 2, num[divide] / num[divide + 1]);
     operator.splice(divide, 1);
     divide = operator.indexOf("÷");
-    console.log(divide);
   }
   let multiply = operator.indexOf("×");
   while (multiply != -1) {
