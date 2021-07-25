@@ -30,7 +30,8 @@
   color: #525cee;
   border: 1px solid #525cee;
   border-radius: 3px;
-  height: 70px;
+  max-width: 360px;
+  height: 90px;
   padding: 10px 15px 0 0;
   text-align: right;
   margin: 20px;
