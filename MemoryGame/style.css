@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100vh;
+}
+.grid {
+  width: 500px;
+  margin: 10px;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.footer {
+  text-align: center;
+  height: 50px;
+  width: 100%;
+  background-color: #656cd3;
+  color: #c7c7c7;
+  font-size: 18px;
+  margin-top: 30px;
+  padding-top: 15px;
+}
+@media (max-width: 550px) {
+  .grid {
+    width: 100%;
+  }
+}
