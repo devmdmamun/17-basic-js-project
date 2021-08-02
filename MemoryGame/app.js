@@ -77,9 +77,7 @@ function Check() {
 
 function flipCard() {
   let cardId = this.getAttribute("data-id");
-  console.log(cardId);
   cardChosen.push(cardArray[cardId].name);
-  console.log(cardChosen);
   cardChosenId.push(cardId);
   this.setAttribute("src", cardArray[cardId].src);
   if (cardChosenId.length === 2) {
