@@ -23,13 +23,8 @@ h1 {
   font-size: 3rem;
   padding-top: 20px;
 }
-#jsClock-h1 {
-  font-size: 3.5rem;
-  font-family: "Zen Tokyo Zoo", cursive;
-  color: #656cd3;
-}
 .bgStopWatch {
-  background-image: url("./StopWatch/image/bg.png");
+  background-image: url("./image/bg.png");
   background-size: contain;
   background-repeat: no-repeat;
   max-width: 1052px;
@@ -73,16 +68,6 @@ button:hover {
   color: white;
   transition: 0.4s;
 }
-#jsclock {
-  color: #656cd3;
-  font-size: 60px;
-  position: absolute;
-  min-width: 430px;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  font-family: "Orbitron", sans-serif;
-}
 footer {
   position: fixed;
   text-align: center;
@@ -95,6 +80,9 @@ footer p {
   font-size: 18px;
   margin-top: 10px;
   color: #c7c7c7;
+}
+a {
+  color: inherit;
 }
 @media (max-width: 900px) {
   .bgStopWatch {
